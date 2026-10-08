@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PATHFIT 1</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="background-grid"></div>
+  <div class="light-orb orb-one"></div>
+  <div class="light-orb orb-two"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon"></span>
+      <span class="brand-name">
+        PATHFIT WEBSITE
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#explore" class="nav-link">Explore</a>
+      <a href="#learn" class="nav-link">Learn</a>
+      <a href="#quiz" class="nav-link">Quiz</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+
+    <section class="hero-content">
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        INTERACTIVE SKELETAL SYSTEM ANATOMY
+      </div>
+
+      <h1>
+        THE HUMAN
+        <span>SKELETAL</span>
+        <span class="outline-text">SYSTEM.</span>
+      </h1>
+
+      <p class="hero-description">
+       Underneath every step you take is a dynamic masterpiece of living bones
+       continuously rebuilding, shielding your core, and powering your motion.
+        Step inside and explore the architecture holding your world together.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#explore" class="primary-button">
+          EXPLORE ANATOMY
+        </a>
+        <a href="#learn" class="hero-btn">
+    LEARN MORE
+</a>
+      </div>
+
+      <div class="hero-footer">
+        <span>01 — SKELETAL SYSTEM</span>
+        <span class="footer-line"></span>
+        <span>206 PIECES OF LIVING ENGINEERING. EXPLORE WHAT KEEPS YOU STANDING.</span>
+      </div>
+    </section>
+
+    <section id="explore" class="anatomy-section">
+      <div class="anatomy-glow"></div>
+      <div class="orbit orbit-outer"></div>
+      <div class="orbit orbit-inner"></div>
+
+      <div class="model-label label-top">
+        <span class="label-line"></span>
+        SKELETAL ANATOMY
+      </div>
+
+      <div id="anatomy-viewer" class="anatomy-viewer">
+  
+    <div class="anatomy-label-layer"></div>
+
+    <div class="bone-info">
+        <span class="bone-info-number">01</span>
+
+        <div>
+            <strong>Skull</strong>
+            <small>Click a numbered label to learn about that bone.</small>
+        </div>
+    </div>
+
+</div>
+       
+      </div>
+
+      <div class="model-coordinate coordinate-left">
+        <span></span>
+        <span>FRONT VIEW</span>
+      </div>
+
+      <div class="model-coordinate coordinate-right">
+        <span>PATH</span>
+        <span>FIT</span>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="learn" class="below-section">
+    <span class="section-kicker">01 / UNDERSTAND YOUR BODY</span>
+    <h2>More than meets the eye.</h2>
+    <p>
+      Your body is built on a remarkable framework of bones.
+       The skeletal system is made up of bones and cartilage that work together to give your body shape,
+        provide stability, protect delicate organs, and make movement possible. Bones are strong,
+         living connective tissues that constantly support and adapt to the demands placed on your body. 
+         From the skull protecting the brain to the rib cage shielding the heart and lungs, every part of the skeleton has an important role.
+          Explore the three essential functions of the skeletal system:
+    </p>
+  </section>
+<section id="learn" class="learn-section">
+
+    <div class="learn-cards">
+
+        <div class="learn-card">
+            <div class="learn-number">01</div>
+            <h3>PROTECT</h3>
+            <p>
+               Your bones act like a protective shield for some of the body’s most delicate organs.
+                The skull protects the brain, the vertebral column keeps the spinal cord safe, and
+                 the rib cage surrounds and protects the heart and lungs.
+            </p>
+        </div>
+
+        <div class="learn-card">
+            <div class="learn-number">02</div>
+            <h3>SUPPORTS</h3>
+            <p>
+               Our skeleton provides the framework that keeps our body strong and supported.
+                It gives us our shape, keeps our vital organs in place, and helps us maintain
+                 good posture.
+            </p>
+        </div>
+
+        <div class="learn-card">
+            <div class="learn-number">03</div>
+            <h3>MOVES</h3>
+            <p>
+               Our bones work together with our muscles to make movement possible.
+                The skeleton provides attachment points for muscles, while joints connect
+                 the bones and allow them to move in different ways.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+  <section id="quiz" class="below-section">
+    <span class="section-kicker">02 / TEST YOUR KNOWLEDGE</span>
+    <h2>Think you know your bones?</h2>
+    <p>You’ve learned how the skeletal system gives your body strength, 
+      protects vital organs, and makes movement possible. Now it’s your turn to prove what you know.
+       Take the quiz and see if you can get them all right!</p>
+   <div class="quiz-intro">
+</div>
+
+<div class="quiz-box">
+
+    <div class="quiz-progress">
+        QUESTION <span id="quiz-question-number">1</span> / 5
+    </div>
+
+    <h3 id="quiz-question">
+        Which bone protects the brain?
+    </h3>
+
+    <div id="quiz-options" class="quiz-options"></div>
+
+    <button id="quiz-next" type="button">
+        NEXT
+    </button>
+
+       <div id="quiz-result">
+
+        <h3>QUIZ COMPLETE</h3>
+
+        <p>Your score</p>
+
+        <strong id="quiz-score">0 / 5</strong>
+
+        <button id="quiz-restart" type="button">
+            TRY AGAIN
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="about" class="below-section">
+</body>
+</html>
+  </section>
+
+  <section id="about" class="below-section">
+    <span class="section-kicker">03 / ABOUT THIS WEBSITE</span>
+    <h2>TURNING KNOWLEDGE INTO INTERACTION.</h2>
+    <p>
+      This educational website was created not only as a midterm performance task for Sir Arnel Sabido Jr., 
+      but as an opportunity to turn learning into an interactive experience.
+       It was designed to explore the human skeletal system beyond simple names and definitions.
+        Through interactive visuals, a 3D skeletal model, and an engaging quiz, 
+        this website aims to make anatomy easier to explore, understand, and remember. 
+        It is a small step toward making learning something we can see, interact with, and truly appreciate.
+    </p>
+  
+  </section>
+
+  <footer class="site-footer">
+    <span>Interactive Skeletal System</span>
+  </footer>
+
+
+<script type="module" src="./Script.js"></script>
+
+</body>
+</html>
