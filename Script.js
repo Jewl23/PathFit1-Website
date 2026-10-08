@@ -445,8 +445,7 @@ loading.className = 'viewer-loading';
 loading.textContent = '🦴 Loading 3D Skeleton... Please wait.';
 viewer.appendChild(loading);
 
- loader.load('./Human%20skeleton.glb',
-
+loader.load('./Human%20skeleton.glb',
     (gltf) => {
 
       const model = gltf.scene;
